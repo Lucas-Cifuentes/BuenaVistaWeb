@@ -4,8 +4,6 @@ import "../Styles/Navbar.css";
 
 import { Link } from "react-router-dom";
 
-import Carousel from "./Carousel";
-
 import Logo from "../Assets/Logo.png";
 
 const Navbar = () => {
@@ -35,7 +33,6 @@ const Navbar = () => {
           </Link>
         </div>
       </nav>
-      <Carousel />
       <ul id="slide-out" className="sidenav">
         <li>
           <div className="user-view">

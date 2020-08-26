@@ -1,23 +1,21 @@
 import React from "react";
 
-const Carousel = () => {
+import "../Styles/Carousel.css";
+
+const Carousel = ({ one, two, third, four }) => {
   return (
     <div className="carousel carousel-slider center">
       <div className="carousel-item red white-text">
-        <h2>First Panel</h2>
-        <p className="white-text">This is your first panel</p>
+        <img src={one} alt="one" height="100%" />
       </div>
       <div className="carousel-item amber white-text">
-        <h2>Second Panel</h2>
-        <p className="white-text">This is your second panel</p>
+        <img src={two} alt="one" height="100%" />
       </div>
       <div className="carousel-item green white-text">
-        <h2>Third Panel</h2>
-        <p className="white-text">This is your third panel</p>
+        <img src={third} alt="one" height="100%" />
       </div>
       <div className="carousel-item blue white-text">
-        <h2>Fourth Panel</h2>
-        <p className="white-text">This is your fourth panel</p>
+        <img src={four} alt="one" height="100%" />
       </div>
     </div>
   );
