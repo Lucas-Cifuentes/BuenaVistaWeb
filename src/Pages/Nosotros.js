@@ -2,10 +2,13 @@ import React from "react";
 
 import "../Styles/Nosotros.css";
 
+import Logo from "../Assets/Logo.png";
+
 const Nosotros = () => {
   return (
     <div>
       <div className="center">
+        <img className="circle" src={Logo} alt="logo" />
         <h2>Buenavista Parquizaciones</h2>
         <h3>Un servicio diferente</h3>
       </div>
