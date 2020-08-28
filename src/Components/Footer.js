@@ -1,6 +1,9 @@
 import React from "react";
 
 const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <footer className="page-footer green darken-3">
       <div className="container">
@@ -15,23 +18,27 @@ const Footer = () => {
             <h5 className="white-text">Contacto</h5>
             <ul>
               <li>
-                <a className="grey-text text-lighten-3" href="#!">
-                  Instagram
+                <a
+                  className="grey-text text-lighten-3"
+                  href="https://www.instagram.com/vist78/"
+                >
+                  <i className="fab fa-instagram"></i> @vist78
                 </a>
               </li>
               <li>
                 <a className="grey-text text-lighten-3" href="#!">
-                  Facebook
+                  <i className="fab fa-facebook-square"></i> Parquizaciones
+                  buena vista
                 </a>
               </li>
               <li>
-                <a className="grey-text text-lighten-3" href="#!">
-                  Email
-                </a>
+                <span className="grey-text text-lighten-3">
+                  <i className="far fa-envelope"></i> buenavist78@gmail.com
+                </span>
               </li>
               <li>
                 <a className="grey-text text-lighten-3" href="#!">
-                  Telefono
+                  <i className="fas fa-phone-alt"></i>
                 </a>
               </li>
             </ul>
@@ -40,7 +47,7 @@ const Footer = () => {
       </div>
       <div className="footer-copyright green darken-4">
         <div className="container">
-          <span className="grey-text text-lighten-4">© 2020 Buenavista</span>
+          <span className="grey-text text-lighten-4">© {year} Buenavista</span>
           <a
             className="grey-text text-lighten-4 right"
             href="https://www.linkedin.com/in/lucas-cifuentes-a35a4a159/"
