@@ -6,7 +6,7 @@ import Card from "../Components/Card.js";
 
 import Carousel from "../Components/Carousel";
 
-//imagenes carouse
+//imagenes carousel
 import One from "../Assets/Imagenes/PatioCasaArboles.jpeg";
 import Two from "../Assets/Imagenes/MedianeraMadera.jpeg";
 import Third from "../Assets/Imagenes/PiletaMedianeraMadera.jpeg";
