@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
     <div className="fixed-action-btn">
       <a
         className="btn-floating btn-large green"
-        href="https://api.whatsapp.com/send?phone=542235390748"
+        href="https://api.whatsapp.com/send?phone=541151264191"
       >
         <span
           className="tooltipped"
