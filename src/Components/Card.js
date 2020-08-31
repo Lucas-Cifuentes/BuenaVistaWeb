@@ -10,7 +10,8 @@ const Card = ({ foto, titulo, to, page = "trabajos" }) => {
     return (
       <div className="card">
         <div className="card-image">
-          <img className="materialboxed" src={foto} alt="Foto" />
+          {/* className="materialboxed"  dont work this*/}
+          <img src={foto} alt="Foto" />
           <Link to={link}>
             <span className="card-title center">{titulo}</span>
           </Link>
@@ -21,7 +22,8 @@ const Card = ({ foto, titulo, to, page = "trabajos" }) => {
   return (
     <div className="card">
       <div className="card-image">
-        <img className="materialboxed" src={foto} alt="Foto" />
+        {/* className="materialboxed" dont work this */}
+        <img src={foto} alt="Foto" />
       </div>
     </div>
   );
