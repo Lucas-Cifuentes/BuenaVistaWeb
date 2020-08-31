@@ -8,11 +8,13 @@ import firebaseConfig from "./firebase-config";
 import { FirebaseAppProvider } from "reactfire";
 import { BrowserRouter } from "react-router-dom";
 
+import Loading from "./Components/Loading";
+
 ReactDOM.render(
   <FirebaseAppProvider firebaseConfig={firebaseConfig}>
     <React.StrictMode>
       <BrowserRouter>
-        <Suspense fallback={"Loading..."}>
+        <Suspense fallback={<Loading />}>
           <App />
         </Suspense>
       </BrowserRouter>
