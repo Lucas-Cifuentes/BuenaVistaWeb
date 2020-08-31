@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../Styles/WhatsappButton.css";
+
 const WhatsAppButton = () => {
   return (
     <div className="fixed-action-btn">
