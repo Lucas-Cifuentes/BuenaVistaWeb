@@ -1,30 +1,40 @@
-import React from "react";
-
-import "../Styles/Trabajos.css";
-
-import Foto from "../Assets/Imagenes/ArbolesCalle.jpeg";
-import Foto2 from "../Assets/Imagenes/PiletaEdificios.jpeg";
-import Foto3 from "../Assets/Imagenes/PatioJuegos.jpeg";
-import Foto4 from "../Assets/Imagenes/PiletaPisoMadera.jpeg";
+import React, { useEffect, useState } from "react";
 
 import Card from "../Components/Card";
 
+import { useFirestore } from "reactfire";
+
+import Loading from "../Components/Loading";
+
 const Trabajos = () => {
+  const firestore = useFirestore();
+  const [loading, setLoading] = useState(true);
+  const [jobsImages, setJobsImages] = useState([]);
+
+  useEffect(() => {
+    firestore()
+      .collection("Images")
+      .get()
+      .then((result) => {
+        setLoading(false);
+        result.forEach((item) => {
+          let url = item.data().url;
+          setJobsImages((jobsImages) => [...jobsImages, url]);
+        });
+      });
+  }, [firestore]);
+
   return (
-    <div className="trabajos center">
-      <h1>Nuestros Trabajos</h1>
-      <div className="row">
-        <div className="col">
-          <Card foto={Foto} />
-        </div>
-        <div className="col">
-          <Card foto={Foto2} />
-        </div>
-        <div className="col">
-          <Card foto={Foto3} />
-        </div>
-        <div className="col">
-          <Card foto={Foto4} />
+    <div className="trabajos">
+      <h1 className="titulo center">Nuestros Trabajos</h1>
+      <div className="container">
+        <div className="row">
+          {loading && <Loading />}
+          {jobsImages.map((img, index) => (
+            <div key={index} className="col">
+              <Card foto={img} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
