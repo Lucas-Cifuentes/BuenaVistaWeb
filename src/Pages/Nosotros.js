@@ -6,7 +6,7 @@ import Logo from "../Assets/Logo.png";
 
 const Nosotros = () => {
   return (
-    <div>
+    <div className="container">
       <div className="center">
         <img className="circle" src={Logo} alt="logo" />
         <h2>Buenavista Parquizaciones</h2>
