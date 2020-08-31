@@ -9,10 +9,8 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col l6 s12">
-            <h5 className="white-text">Ubicacion</h5>
-            <p className="grey-text text-lighten-4">
-              Maps con la ubicacion del local
-            </p>
+            <h5 className="white-text">Area de Cobertura</h5>
+            <p className="grey-text text-lighten-4">Pilar y alrededores.</p>
           </div>
           <div className="col l4 offset-l2 s12">
             <h5 className="white-text">Contacto</h5>
@@ -26,9 +24,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a className="grey-text text-lighten-3" href="#!">
-                  <i className="fab fa-facebook-square"></i> Parquizaciones
-                  buena vista
+                <a
+                  className="grey-text text-lighten-3"
+                  href="https://www.facebook.com/profile.php?id=100004657057297"
+                >
+                  <i className="fab fa-facebook-square"></i> Buenavista
+                  Parquizaciones
                 </a>
               </li>
               <li>
@@ -38,7 +39,7 @@ const Footer = () => {
               </li>
               <li>
                 <a className="grey-text text-lighten-3" href="#!">
-                  <i className="fas fa-phone-alt"></i>
+                  <i className="fas fa-phone-alt"></i> 1151264191
                 </a>
               </li>
             </ul>
@@ -50,9 +51,15 @@ const Footer = () => {
           <span className="grey-text text-lighten-4">© {year} Buenavista</span>
           <a
             className="grey-text text-lighten-4 right"
+            href="https://www.instagram.com/dantedago/"
+          >
+            - Designed by Dante Dongarra
+          </a>
+          <a
+            className="grey-text text-lighten-4 right"
             href="https://www.linkedin.com/in/lucas-cifuentes-a35a4a159/"
           >
-            Design by Lucas Cifuentes
+            - Developed by Lucas Cifuentes
           </a>
         </div>
       </div>
