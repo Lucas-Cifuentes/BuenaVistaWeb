@@ -1,3 +1,38 @@
-.green {
-  font-family: "Bree Serif", serif;
+.navbar {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4) !important;
+  z-index: 1;
+}
+
+.box {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 40%;
+}
+
+.contenidonav {
+  position: relative;
+  left: -50%;
+  top: -50%;
+  padding: 0 2rem;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+}
+
+.imagen {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 27%;
+}
+
+.logo {
+  position: relative;
+  left: -50%;
+  top: -50%;
+}
+
+.parq {
+  color: rgb(219, 219, 219);
 }

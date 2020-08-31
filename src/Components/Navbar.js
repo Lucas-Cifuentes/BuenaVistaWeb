@@ -5,13 +5,14 @@ import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
 
 import Logo from "../Assets/Logo.png";
+import Fondo from "../Assets/Fondo.png";
 
 const Navbar = () => {
   return (
     <>
-      <nav className="green">
+      <nav className="navbar">
         <div className="nav-wrapper container">
-          <Link to="/" className="brand-logo">
+          <Link to="/" className="brand-logo hide-on-large-only">
             Buenavista
           </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
@@ -33,6 +34,20 @@ const Navbar = () => {
           </Link>
         </div>
       </nav>
+
+      <div>
+        <div className="box white-text center hide-on-med-and-down">
+          <div className="contenidonav">
+            <h1 className="buena">Buenavista</h1>
+            <h4 className="parq">Parquizaciones</h4>
+          </div>
+        </div>
+        <img src={Fondo} alt="Fondo" width="100%" />
+      </div>
+      <div className="imagen center hide-on-med-and-down">
+        <img className="logo circle" src={Logo} alt="logo" />
+      </div>
+
       <ul id="slide-out" className="sidenav">
         <li>
           <div className="user-view">
