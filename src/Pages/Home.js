@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../Styles/Home.css";
-
 import Card from "../Components/Card.js";
 
 //imagenes card
